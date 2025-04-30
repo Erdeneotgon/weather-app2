@@ -24,10 +24,6 @@ export const Input = ({ formattedCityName, setCityName, cityNames }) => {
     setCityName(value);
   };
 
-  // const changedDayTemp = dayTemp;
-
-  // option click hiih uyd city utgiiig avah
-
   return (
     <div className="rounded-2xl  w-52">
       <input

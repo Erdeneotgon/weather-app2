@@ -33,10 +33,11 @@ export default function Home() {
 
   const dayTemp = weatherData?.forecast.forecastday[0].day.maxtemp_c;
   const cityNames = weatherData?.location.name;
-
+  // console.log("cityNames", cityNames);
   const nightTemp = weatherData?.forecast.forecastday[0].day.mintemp_c;
 
   const dayMood = weatherData?.forecast.forecastday[0].day.condition.text;
+  console.log("dayMood", dayMood);
 
   const dayDate = weatherData?.forecast.forecastday[0].date;
 
