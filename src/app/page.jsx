@@ -37,7 +37,6 @@ export default function Home() {
   const nightTemp = weatherData?.forecast.forecastday[0].day.mintemp_c;
 
   const dayMood = weatherData?.forecast.forecastday[0].day.condition.text;
-  console.log("dayMood", dayMood);
 
   const dayDate = weatherData?.forecast.forecastday[0].date;
 
@@ -51,13 +50,13 @@ export default function Home() {
 
   return (
     <div className="h-screen flex flex-col justify-center items-center gap-36">
-      <div div className="flex justify-center">
+      <div className="flex justify-center">
         <Input
           formattedCityName={formattedCityName}
           setCityName={setCityName}
         />
       </div>
-      <div className="flex justify-center gap-10 items-center ">
+      <div className="flex justify-center gap-10 items-center bg-{#0F141E}">
         <Day
           dayTemp={dayTemp}
           dayDate={dayDate}

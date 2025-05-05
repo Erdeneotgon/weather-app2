@@ -34,7 +34,7 @@ export const Input = ({ formattedCityName, setCityName, cityNames }) => {
       />
       <select name="cityName" value={optionValue} onChange={handleOptionValue}>
         {filteredData.map((city) => {
-          return <option value={city}>{city}</option>;
+          return( <option value={city}>{city}</option>);
         })}
       </select>
     </div>
